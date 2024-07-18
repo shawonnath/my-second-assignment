@@ -17,8 +17,7 @@ body{
 /*--nav style start--*/
 nav{
     width: 90%;
-    height: 45px;
-    background-color: rgb(0, 0, 0);
+    height: 50px;
     margin: 0px auto;
     margin-top: 30px;
 }
@@ -85,8 +84,8 @@ nav a:hover{
     }
     #checkbtn .list{
         position: absolute;
-        right: 1px;
-        top: 42px;
+        top: 43px;
+        right: 2px;
         font-size: 1rem;
         color: rgb(230, 83, 60);
         list-style: none;
@@ -208,7 +207,7 @@ header{
 }
 /*header style end*/
 
-/*header section start*/
+/*header responsive mobile start*/
 @media screen and (max-width:576px){
     .header-title{
         width: 100%;
@@ -218,7 +217,7 @@ header{
     }
     .header-img{
         left: 5px;
-        top: 480px;
+        top: 500px;
     }
     .header-title .header-btn1{
         padding: 8px 12px;
@@ -240,3 +239,4 @@ header{
         top: 850px;
     }
 }
+/*header responsive mobile start*/
