@@ -211,6 +211,7 @@ header{
 @media screen and (max-width:576px){
     .header-title{
         width: 100%;
+        margin-top: 50px;
     }
     .header-title h1{
         font-size: 3.2rem;
@@ -239,4 +240,38 @@ header{
         top: 850px;
     }
 }
-/*header responsive mobile start*/
+/*header responsive mobile end*/
+
+/*header responsive pad start*/
+@media screen and (min-width:576px) and (max-width:992px){
+    .header-title{
+        width: 100%;
+    }
+    .header-title h1{
+        font-size: 3.2rem;
+    }
+    .header-img{
+        left: 5px;
+        top: 500px;
+    }
+    .header-title .header-btn1{
+        padding: 8px 12px;
+    }
+    .header-title .header-btn2{
+        padding: 8px 12px;
+        margin-left: 3px;
+    }
+    .isticur1{
+        width: 130px;
+        height: 100px;
+        left: 180px;
+        top: 520px;
+    }
+    .isticur2{
+        width: 150px;
+        height: 100px;
+        left: 1px;
+        top: 850px;
+    }
+}
+/*header responsive pad end*/
