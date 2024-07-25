@@ -689,10 +689,10 @@ footer hr{
         top: 500px;
     }
     .header-title .header-btn1{
-        padding: 8px 12px;
+        padding: 8px 10px;
     }
     .header-title .header-btn2{
-        padding: 8px 12px;
+        padding: 8px 10px;
         margin-left: 3px;
     }
     .isticur1{
@@ -722,11 +722,11 @@ footer hr{
         top: 500px;
     }
     .header-title .header-btn1{
-        padding: 8px 12px;
+        padding: 8px 15px;
     }
     .header-title .header-btn2{
-        padding: 8px 12px;
-        margin-left: 3px;
+        padding: 8px 15px;
+        margin-left: 10px;
     }
     .header-img{
         left: 160px;
@@ -892,10 +892,15 @@ footer hr{
         margin: 0px auto;
         padding-top: 30px;
     }
+    .sec4-main-form .sec4-form-title{
+        margin-left: 28px;
+    }
     .section4-main .sec4-main-form{
-        width: 93%;
+        width: 98%;
         margin: 0px auto;
+        margin-left: 5px;
         padding-top: 30px;
+
     }
 
 
