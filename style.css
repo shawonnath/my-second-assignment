@@ -14,94 +14,51 @@ body{
   font-variation-settings:
     "slnt" 0;
 }
-/*--nav style start--*/
+
+
+
+/*----nav style start----*/
 nav{
-    width: 90%;
-    height: 50px;
+    width: 80%;
     margin: 0px auto;
     margin-top: 30px;
 }
-nav .lugo{
-    color: rgb(230, 83, 60);
-    line-height: 40px;
-    font-size: 2rem;
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-main h1{
     font-style: italic;
-    font-weight: 800;
-    margin-left: 60px;
-}
-nav .ancore{
-    float: right;
-    line-height: 40px;
-    color: white;
-    border: 1px solid rgb(107, 106, 105);
-    border-radius: 20px;
-    margin: 2px 0px;
-    padding: 0px 2px;
-}
-nav .ancore a{
-    text-decoration: none;
-    color: white;
-    padding: 0px 10px;
-    font-size: 0.8rem;
-}
-
-#checkbtn{
-    float: right;
-    line-height: 40px;
-    margin-right: 10px;
     font-size: 2rem;
+    color: rgb(230, 83, 60);
+}
+.nav-ancore{
+    border: 1px solid rgb(111, 109, 108);
+    padding: 9px 3.5px;
+    border-radius: 20px;
+}
+.nav-ancore a{
+    text-decoration: none;
+    padding: 0px 10px;
     color: white;
+}
+.nav-ancore .home{
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.nav-ancore a:hover{
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.checkbox-div{
     visibility: hidden;
 }
-#check{
-    display: none;
-}
-nav .ancore .a-home{
-    background-color: rgb(230, 83, 60);
-    padding: 10px 13px;
-    border-radius: 20px;
-}
-nav a:hover{
-    background-color: rgb(230, 83, 60);
-    padding: 10px 13px;
-    border-radius: 20px;
-}
-/*--nav style end--*/
-/*nav responsive*/
-@media screen and (max-width:576px){
-    nav .lugo{
-        margin-left: 10px;
-    }
-    #checkbtn{
-        visibility: visible;
-        cursor: pointer;
-    }
-    .ancore{
-        display: none;
-    }
-    nav{
-        position: relative;
-    }
-    #checkbtn .list{
-        position: absolute;
-        top: 43px;
-        right: 2px;
-        font-size: 1rem;
-        color: rgb(230, 83, 60);
-        list-style: none;
-        display: none;
-        text-align: center;
-        cursor: pointer;
-    }
-    #checkbtn:hover .list{
-        display: block;
-    }
-    .list li:hover{
-        background-color: rgb(61, 61, 61);
-        padding: 0px 15px;
-    }
-}
-/*nav responsive end*/
+/*----nav style end----*/
+
+
+
 /*----headrer style start----*/
 header{
     width: 100%;
@@ -121,14 +78,14 @@ header{
     position: absolute;
     height: 500px;
     left: 650px;
-    top: 30px;
+    top: 1px;
 }
 .header-title h1{
     font-weight: 900;
     font-size: 4rem;
 }
 .header-title{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .span{
     font-family: "Dancing Script", cursive;
@@ -196,7 +153,7 @@ header{
     padding: 0px 15px;
     padding-top: 10px;
     left: 550px;
-    top: 400px;
+    top: 350px;
 }
 .isticur2-cycle{
     width: 40px;
@@ -207,7 +164,518 @@ header{
 }
 /*header style end*/
 
-/*header responsive mobile start*/
+
+
+
+/*--------main style start--------*/
+/*---main section1 style srart---*/
+.section1{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.section1-title{
+    color: white;
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+}
+.section1-title h1{
+    font-size: 3rem;
+}
+.section1-title p{
+    margin-top: 15px;
+    color: rgb(176, 164, 164);
+}
+.section1-flex{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.section1-flex .flex1{
+    width: 20%;
+    text-align: center;
+}
+.section1-flex .flex1 img{
+    border-radius: 50%;
+    transition: 2s;
+}
+.flex1 img:hover{
+    transform: scale(1.2);
+}
+.section1-flex .flex1 h3{
+    color: white;
+    margin-top: 15px;
+}
+.section1-flex .flex1 p{
+    color: rgb(176, 164, 164);
+    margin-top: 5px;
+}
+/*---main section1 style end---*/
+
+
+
+/*---main section2 style start---*/
+.section2{
+    width: 80%;
+    height: 350px;
+    background-color: rgba(251, 251, 251, 0.178);
+    margin: 0px auto;
+    margin-top: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.section2-title{
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.section2 img{
+    border-radius: 15px;
+    margin: 30px;
+    transition: 2s;
+}
+.section2 img:hover{
+    transform: scale(1.1);
+}
+.section2-title h1{
+    color: white;
+    font-size: 3rem;
+}
+.section2-title p{
+    color: rgb(176, 164, 164);
+    margin-top: 15px;
+}
+.section2-title button{
+    background-color: rgb(230, 83, 60);
+    color: white;
+    font-weight: bold;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.section2-title button:hover{
+    background-color: black;
+    color: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+}
+/*---main section2 style end---*/
+
+
+
+/*----main section3 style start----*/
+.section3{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 100px;
+    position: relative;
+}
+.section3-title{
+    width: 60%;
+}
+.section3-title h1{
+    color: white;
+    font-size: 3rem;
+}
+.section3-title p{
+    color: rgb(176, 164, 164);
+    margin-top: 15px;
+}
+.section3-image{
+    margin-top: 50px;
+}
+.section3-image .img1{
+    width: 25%;
+    height: 180px; 
+    transition: 2s;
+}
+.section3-image .img1:hover{
+    transform: scale(1.2);
+}
+
+.section3-image .img2{
+    width: 49%;
+    height: 180px;
+    transition: 2s;
+}
+.section3-image .img2:hover{
+    transform: scale(1.2);
+}
+
+.section3-image .img3{
+    width: 25%;
+    height: 180px;
+    transition: 2s;
+}
+.section3-image .img3:hover{
+    transform: scale(1.2);
+}
+
+.section3-image .img4{
+    width: 40%;
+    height: 180px;
+    transition: 2s;
+}
+.section3-image .img4:hover{
+    transform: scale(1.2);
+}
+
+.section3-image .img5{
+    width: 25%;
+    height: 180px;
+    transition: 2s;
+}
+.section3-image .img5:hover{
+    transform: scale(1.2);
+}
+
+.section3-image .img6{
+    width: 34%;
+    height: 180px;
+    transition: 2s;
+}
+.section3-image .img6:hover{
+    transform: scale(1.2);
+}
+
+.e-x p{
+    color: rgb(2, 7, 249);
+    position: absolute;
+    top: 170px;
+    left: 10px;
+}
+.p-u p{
+    position: absolute;
+    color: rgb(201, 191, 191);
+    top: 170px;
+    left: 260px;
+}
+.j-p p{
+    color: rgb(0, 255, 225);
+    position: absolute;
+    top: 310px;
+    left: 750px;
+}
+.l-p p{
+    color: rgb(251, 255, 0);
+    position: absolute;
+    top: 360px;
+    left: 220px;
+}
+.l-pre p{
+    color: rgb(41, 240, 15);
+    position: absolute;
+    top: 490px;
+    left: 410px;
+}
+.f-w-o{
+    color: rgb(255, 1, 225);
+    position: absolute;
+    top: 360px;
+    left: 840px;
+}
+/*----main section3 style end----*/
+
+
+
+/*----main section4 style start----*/
+.section4-title{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.section4-title h1{
+    color: white;
+    font-size: 3rem;
+}
+.section4-title p{
+    color: rgb(176, 164, 164);
+    margin-top: 10px;
+}
+
+.section4-main{
+    width: 100%;
+    height: 370px;
+    background-color: rgba(251, 251, 251, 0.185);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.sec4-main-table{
+    color: white;
+    margin-top: 50px;
+}
+.sec4-main-table table{
+    border: 1px solid rgb(176, 164, 164);
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+.sec4-main-table table, th, td{
+    border: 1px solid rgb(176, 164, 164);
+    border-color: rgb(176, 164, 164);
+    padding: 10px 25px;
+}
+.sec4-main-table td{
+    color: rgb(176, 164, 164);
+}
+
+.sec4-main-form{
+    margin-top: 50px;
+}
+.sec4-main-form h1{
+    color: white;
+}
+.sec4-main-form p{
+    color: rgb(176, 164, 164);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sec4-main-form input, .i-p{
+    padding: 10px;
+    padding-right: 100px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.103);
+    color: rgba(135, 124, 124, 0.803);
+    border: none;
+    border-radius: 6px;
+}
+.sec4-main-form #select-1{
+    padding: 10px;
+    padding-right: 198px;
+    background-color: rgba(255, 255, 255, 0.103);
+    color: rgba(135, 124, 124, 0.803);
+    border: none;
+    border-radius: 6px;
+}
+.sec4-main-form #select-2{
+    padding: 10px;
+    padding-right: 382px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.103);
+    color: rgba(135, 124, 124, 0.803);
+    border: none;
+    border-radius: 6px;
+}
+
+.sec4-main-form button{
+    background-color: rgb(230, 83, 60);
+    color: white;
+    font-weight: bold;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.sec4-main-form button:hover{
+    background-color: black;
+    color: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+}
+/*----main section4 style end----*/
+
+
+
+/*----main section5 style start----*/
+.section5 .sec5-title{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.sec5-title h1{
+    font-size: 3rem;
+    color: white;
+}
+.sec5-title p{
+    color: rgb(176, 164, 164);
+    margin-top: 10px;
+}
+
+.sec5-img{
+    width: 80%;
+    height: 540px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgba(251, 251, 251, 0.185);
+    border-radius: 20px;
+    position: relative;
+}
+.sec5-img .image1{
+    width: 30.97%;
+    height: 244px;
+    margin-left: 14px;
+    margin-top: 13px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+
+.sec5-img h3{
+    color: white;
+}
+.sec5-img p{
+    color: rgb(176, 164, 164);
+}
+.sec5-img .Trainer-name1{
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+.sec5-img .Trainer-name2{
+    position: absolute;
+    top: 210px;
+    left: 350px;
+}
+.sec5-img .Trainer-name3{
+    position: absolute;
+    top: 210px;
+    left: 670px;
+}
+.sec5-img .Trainer-name4{
+    position: absolute;
+    top: 470px;
+    left: 30px;
+}
+.sec5-img .Trainer-name5{
+    position: absolute;
+    top: 470px;
+    left: 350px;
+}
+.sec5-img .Trainer-name6{
+    position: absolute;
+    top: 470px;
+    left: 670px;
+}
+/*----main section5 style end----*/
+/*--------main style end--------*/
+
+
+
+/*----footer style start----*/
+footer{
+    width: 100%;
+    background-color: rgba(251, 251, 251, 0.185);
+    margin-top: 100px;
+}
+.footer-section{
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.f-s-title{
+    width: 40%;
+}
+.f-s-title h1{
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    font-style: italic;
+}
+.f-s-title p{
+    color: rgb(176, 164, 164);
+    margin-top: 15px;
+}
+
+
+.f-s-details{
+    display: flex;
+    column-gap: 150px;
+}
+.f-s-details h2{
+    color: white;
+    margin-bottom: 30px;
+}
+.f-s-details a{
+    display: block;
+    text-decoration: none;
+    color: rgb(176, 164, 164);
+    margin-top: 15px;
+}
+
+.f-s-details a:hover{
+    color: rgb(230, 83, 60);
+}
+footer hr{
+    width: 80%;
+    color: rgb(176, 164, 164);
+    margin: 0px auto;
+    margin-top: 50px;
+}
+.f-p{
+    color: rgb(176, 164, 164);
+    padding: 25px;
+    text-align: center;
+}
+/*----footer style end----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--nav responsive for mobile style start--*/
+@media screen and (max-width:576px) {
+    .nav-ancore{
+        visibility: hidden;
+    }
+    .checkbox-div{
+        visibility: visible;
+    }
+    nav{
+        display: flex;
+        position: relative;
+    }
+    #checkbox{
+        visibility: hidden;
+    }
+    #check-button{
+        position: absolute;
+        font-size: 2rem;
+        cursor: pointer;
+        right: 1px;
+        color: white;
+    }
+    .checkbox-ancore a{
+        display: block;
+        text-decoration: none;
+        text-align: right;
+        padding: 8px;
+        color: tomato;
+        font-weight: bold;
+    }
+    .checkbox-ancore a:hover{
+        background-color: rgba(131, 119, 119, 0.751);
+    }
+    .checkbox-ancore{
+        position: absolute;
+        background-color: rgb(251, 249, 249);
+        top: 40px;
+        left: 86%;
+        display: none;
+    }
+    .checkbox-div:hover .checkbox-ancore{
+        display: block;
+    }
+}
+/*--nav responsive for mobile style end--*/
+
+
+/*header responsive for mobile style start*/
 @media screen and (max-width:576px){
     .header-title{
         width: 100%;
@@ -234,21 +702,20 @@ header{
         top: 520px;
     }
     .isticur2{
-        width: 150px;
+        width: 180px;
         height: 100px;
         left: 1px;
         top: 850px;
     }
 }
-/*header responsive mobile end*/
-
-/*header responsive pad start*/
+/*header responsive for mobile style end*/
+/*header responsive for medium device style start*/
 @media screen and (min-width:576px) and (max-width:992px){
     .header-title{
         width: 100%;
     }
     .header-title h1{
-        font-size: 3.2rem;
+        font-size: 5rem;
     }
     .header-img{
         left: 5px;
@@ -261,17 +728,332 @@ header{
         padding: 8px 12px;
         margin-left: 3px;
     }
+    .header-img{
+        left: 160px;
+    }
     .isticur1{
         width: 130px;
         height: 100px;
-        left: 180px;
+        left: 350px;
         top: 520px;
     }
     .isticur2{
-        width: 150px;
+        width: 180px;
         height: 100px;
-        left: 1px;
+        left: 50px;
         top: 850px;
     }
 }
-/*header responsive pad end*/
+/*header responsive for medium device style end*/
+
+
+/*--main section1 responsive for mobile style start--*/
+@media screen and (max-width:576px){
+    .section1{
+        margin-top: 540px;
+    }
+    .section1-title{
+        width: 90%;
+    }
+    .section1-flex{
+        display: block;
+    }
+    .section1-flex .flex1{
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+}
+/*--main section1 responsive for mobile style end--*/
+/*--main section1 responsive for medium device style start--*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .section1{
+        margin-top: 580px;
+    }
+    .section1-flex{
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 50px;
+    }
+    .section1-flex .flex1{
+        width: auto;
+    }
+}
+/*--main section1 responsive for medium device style end--*/
+
+
+/*--main section2 responsive style for mobile start--*/
+@media screen and (max-width:576px){
+    .section2{
+        display: block;
+        height: auto;
+    }
+    .section2-title{
+        width: auto;
+        margin: 30px;
+        padding-top: 20px;
+    }
+    .section2 img{
+        width: 80%;
+    }
+}
+/*--main section2 responsive style for mobile end--*/
+/*--main section2 responsive style for medium device start--*/
+@media screen and (min-width:576px) and (max-width:992px){
+    .section2{
+        height: 510px;
+    }
+    .section2 img{
+        width: 300px;
+    }
+}
+/*--main section2 responsive style for medium device end--*/
+
+
+/*--main section3 responsive for mobile style start--*/
+@media screen and (max-width:576px) {
+    .section3-title{
+        width: 100%;
+    }
+    .section3-image .img1{
+        width: 40%;
+        height: 100px;
+    }
+    .section3-image .img2{
+        width: 58%;
+        height: 100px;
+    }
+    .section3-image .img3{
+        width: 50%;
+        height: 100px;
+    }
+    .section3-image .img4{
+        width: 48%;
+        height: 100px;
+    }
+    .section3-image .img5{
+        width: 40%;
+        height: 100px;
+    }
+    .section3-image .img6{
+        width: 58%;
+        height: 100px;
+    }
+    .e-x, .p-u, .j-p, .l-p, .l-pre, .f-w-o{
+        display: none;
+    }
+}
+/*--main section3 responsive for mobile style end--*/
+/*--main section3 responsive for medium device style start--*/
+@media screen and (min-width:576px) and (max-width:992px){
+    .section3-image .img1{
+        width: 40%;
+        height: 160px;
+    }
+    .section3-image .img2{
+        width: 58%;
+        height: 160px;
+    }
+    .section3-image .img3{
+        width: 50%;
+        height: 160px;
+    }
+    .section3-image .img4{
+        width: 48%;
+        height: 160px;
+    }
+    .section3-image .img5{
+        width: 40%;
+        height: 160px;
+    }
+    .section3-image .img6{
+        width: 58%;
+        height: 160px;
+    }
+    .e-x, .p-u, .j-p, .l-p, .l-pre, .f-w-o{
+        display: none;
+    }
+}
+/*--main section3 responsive for medium device style end--*/
+
+
+/*--main section4 responsive for mobile style start--*/
+@media screen and (max-width:576px) {
+    .section4-main{
+        width: 100%;
+        height: 680px;
+        display: block;
+    }
+    .section4-main .sec4-main-table{
+        width: 80%;
+        margin: 0px auto;
+        padding-top: 30px;
+    }
+    .section4-main .sec4-main-form{
+        width: 93%;
+        margin: 0px auto;
+        padding-top: 30px;
+    }
+
+
+    .sec4-main-form .i-p{
+        padding: 10px;
+        padding-right: calc(-40px);
+        margin-top: 5px;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: rgba(135, 124, 124, 0.803);
+        border: none;
+        border-radius: 6px;
+    }
+    .sec4-main-form #select-1{
+        padding: 10px;
+        padding-right: 97px;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: rgba(135, 124, 124, 0.803);
+        border: none;
+        margin-top: 5px;
+        border-radius: 6px;
+    }
+    .sec4-main-form #select-2{
+        padding: 10px;
+        padding-right: 181px;
+        margin-top: 5px;
+        background-color: rgba(255, 255, 255, 0.103);
+        color: rgba(135, 124, 124, 0.803);
+        border: none;
+        border-radius: 6px;
+    }
+}
+/*--main section4 responsive for mobile style end--*/
+/*--main section4 responsive for medium device style start--*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .section4-main{
+        width: 100%;
+        height: 730px;
+        display: block;
+    }
+
+    .sec4-main-form, .sec4-main-table{
+    margin-left: 10%;
+    padding-top: 50px;
+    }
+}
+/*--main section4 responsive for medium device style end--*/
+
+
+/*--main section5 responsive for mobile style start--*/
+@media screen and (max-width:576px) {
+    .section5 .sec5-title{
+        width: 80%;
+    }
+    .sec5-img{
+        height: 1588px;
+    }
+    .sec5-img .image1{
+        width: 88%;
+        height: 244px;
+        margin-left: 14px;
+        margin-top: 13px;
+        border-radius: 20px;
+        opacity: 0.7;
+    }
+
+    .sec5-img .Trainer-name2{
+        position: absolute;
+        top: 465px;
+        left: 30px;
+    }
+    .sec5-img .Trainer-name3{
+        position: absolute;
+        top: 725px;
+        left: 30px;
+    }
+    .sec5-img .Trainer-name4{
+        position: absolute;
+        top: 990px;
+        left: 30px;
+    }
+    .sec5-img .Trainer-name5{
+        position: absolute;
+        top: 1246px;
+        left: 30px;
+    }
+    .sec5-img .Trainer-name6{
+        position: absolute;
+        top: 1510px;
+        left: 30px;
+    }
+}
+/*--main section5 responsive for mobile style end--*/
+/*--main section5 responsive for medium device style start--*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .sec5-img{
+        width: 90%;
+        height: 543px;
+    }
+    .sec5-img .image1{
+        width: 30%;
+        height: 244px;
+        margin-left: 14px;
+        margin-top: 13px;
+        border-radius: 20px;
+        opacity: 0.7;
+    }
+
+    .sec5-img .Trainer-name2{
+        position: absolute;
+        top: 210px;
+        left: 265px;
+    }
+    .sec5-img .Trainer-name3{
+        position: absolute;
+        top: 210px;
+        left: 500px;
+    }
+    .sec5-img .Trainer-name5{
+        position: absolute;
+        top: 470px;
+        left: 265px;
+    }
+    .sec5-img .Trainer-name6{
+        position: absolute;
+        top: 470px;
+        left: 500px;
+    }
+}
+/*--main section5 responsive for medium device style end--*/
+
+
+/*--footer responsive for mobile style start--*/
+@media screen and (max-width:576px) {
+    .footer-section{
+        display: block;
+    }
+    .f-s-title{
+        width: 100%;
+    }
+    .f-s-details{
+        display: block;
+    }
+    .f-s-details h2{
+        margin-top: 50px;
+    }
+}
+/*--footer responsive for mobile style end--*/
+/*--footer responsive for medium device style start--*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .footer-section{
+        display: block;
+    }
+    .f-s-title{
+        width: 80%;
+    }
+    .f-s-details{
+        margin-top: 60px;
+        column-gap: 200px;
+    }
+}
+/*--footer responsive for medium device style end--*/
